@@ -6,8 +6,6 @@
 // check clippy's suggestions from the output to solve the exercise.
 // Execute `rustlings hint clippy1` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
 use std::f32;
 
 fn main() {
@@ -19,5 +17,5 @@ fn main() {
     println!(
         "The area of a circle with radius {:.2} is {:.5}!",
         radius, area
-    )
+    );
 }
