@@ -5,7 +5,10 @@
 
 #[derive(Debug)]
 enum Message {
-    // TODO: define the different variants used below
+   Move(i32,i32),
+   Echo(String),
+   ChangeColor(i32,i32,i32),
+   Quit, // TODO: define the different variants used below
 }
 
 impl Message {
@@ -15,8 +18,10 @@ impl Message {
 }
 
 fn main() {
+    let x;
+    let y;
     let messages = [
-        Message::Move { x: 10, y: 30 },
+        Message::Move  (x,y) = (10,30) ,
         Message::Echo(String::from("hello world")),
         Message::ChangeColor(200, 255, 255),
         Message::Quit,

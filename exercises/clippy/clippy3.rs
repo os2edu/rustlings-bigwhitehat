@@ -7,11 +7,11 @@
 fn main() {
     let my_option: Option<()> = None;
     if my_option.is_none() {
-        my_option.unwrap();
+        my_option.unwrap()
     }
 
     let my_arr = &[
-        -1, -2, -3
+        -1, -2, -3,
         -4, -5, -6
     ];
     println!("My array! Here it is: {:?}", my_arr);
@@ -26,3 +26,4 @@ fn main() {
     value_b = value_a;
     println!("value a: {}; value b: {}", value_a, value_b);
 }
+
